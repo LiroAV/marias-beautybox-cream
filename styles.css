@@ -1,7 +1,7 @@
 /*
 #EDEBE4
 #E1D2C1
-#1C1C1C
+#936F37
 */
 *{
     margin: 0;
@@ -41,7 +41,7 @@ nav{
 }
 .nav-center a:hover{
     margin-top: 13px;
-    border-bottom: solid 3px #1C1C1C;
+    border-bottom: solid 3px #936F37;
     padding-bottom: 10px;
 }
 .nav-right{
@@ -52,12 +52,12 @@ nav{
     font-family: Noto Sans JP;
     font-weight: 600;
     font-size: 16px;
-    border: solid 3px #1C1C1C;
+    border: solid 3px #936F37;
     padding: 8px 16px;
     transition: 0.2s;
 }
 .nav-right a:hover{
-    background-color: #1C1C1C;
+    background-color: #936F37;
     color: #EDEBE4;
 }
 
@@ -80,7 +80,7 @@ nav{
 .title-container p{
     font-family: Playball;
     font-size: 40px;
-    color: #1C1C1C;
+    color: #936F37;
 }
 .title-container h1{
     font-family: Merriweather;
@@ -91,7 +91,7 @@ nav{
     margin-top: 50px;
 }
 .title-container a{
-    background-color: #1C1C1C;
+    background-color: #936F37;
     font-family: Noto Sans JP;
     color: #1E1911;
     font-size: 18px;
@@ -101,7 +101,7 @@ nav{
 }
 .title-container a:hover{
     background-color:transparent;
-    border: solid 3px #1C1C1C;
+    border: solid 3px #936F37;
     padding: 9px 19px;
 }
 
@@ -132,7 +132,7 @@ nav{
     font-size: 50px;
     font-family: Merriweather;
     color: #1E1911;
-    border-left: solid 6px #1C1C1C;
+    border-left: solid 6px #936F37;
     padding-left: 14px;
 }
 .welcome-text p{
@@ -160,7 +160,7 @@ nav{
     font-family: Merriweather;
     color: #1E1911;
     margin-bottom: 100px;
-    border-left: solid 6px #1C1C1C;
+    border-left: solid 6px #936F37;
     padding-left: 14px;
 }
 .angebote-container{
@@ -219,7 +219,7 @@ nav{
     font-family: Merriweather;
     color: #1E1911;
     margin-bottom: 100px;
-    border-left: solid 6px #1C1C1C;
+    border-left: solid 6px #936F37;
     padding-left: 14px;
 }
 .product-container{
@@ -249,7 +249,7 @@ nav{
     color: #1E1911;
     font-family: Merriweather;
     font-size: 26px;
-    border-left: solid 3px #1C1C1C;
+    border-left: solid 3px #936F37;
     padding-left: 10px;
 }
 .product-text p{
@@ -269,8 +269,8 @@ nav{
 }
 .product-button button {
     background-color: transparent;
-    border: solid 2px #1C1C1C;
-    color: #1C1C1C;
+    border: solid 2px #936F37;
+    color: #936F37;
     padding: 16px 20px;
     border-radius: 100px;
     transition: background-color 0s, transform 0.2s;
@@ -281,7 +281,7 @@ nav{
 }
 
 .product-button button:active {
-    background-color: #1C1C1C;
+    background-color: #936F37;
     color: #EDEBE4;
 }
 /* team */
@@ -305,7 +305,7 @@ nav{
     font-size: 50px;
     font-family: Merriweather;
     color: #1E1911;
-    border-left: solid 6px #1C1C1C;
+    border-left: solid 6px #936F37;
     padding-left: 14px;
 }
 .team-grid{
@@ -331,7 +331,7 @@ nav{
     bottom: -31.75px;
 }
 .team-bg{
-    background-color: #1C1C1C;
+    background-color: #936F37;
     display: inline-block;
     padding: 10px;
 }
@@ -371,7 +371,7 @@ nav{
     font-size: 50px;
     font-family: Merriweather;
     color: #1E1911;
-    border-left: solid 6px #1C1C1C;
+    border-left: solid 6px #936F37;
     padding-left: 14px;
 }
 .info-container{
@@ -422,7 +422,7 @@ nav{
 }
 .open-time{
     padding-bottom: 10px;
-    border-bottom: #1C1C1C solid 1px;
+    border-bottom: #936F37 solid 1px;
 }
 .open-grid h3{
     color: #1E1911;
@@ -509,7 +509,7 @@ svg{
     font-size: 16px;
 }
 .impressum{
-    color: #1C1C1C;
+    color: #936F37;
     font-family: Noto Sans JP;
     font-size: 16px;
 }
