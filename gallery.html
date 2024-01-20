@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marias-Beautybox</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Merriweather:wght@300;400;700;900&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+<body>
+    <main>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <img src="img/new-logo.png" alt="">
+                </div>
+                <div class="nav-center">
+                    <a href="index.html">Home</a>
+                    <a href="">Angebote</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="">Über uns</a>
+                    <a href="contact.html">Kontakt</a>
+                </div>
+                <div class="nav-right">
+                    <a href="">Termin buchen</a>
+                </div>
+            </div>
+        </nav>
+        <div class="gallery">
+            <div class="gallery-container">
+                <h1>Nails</h1>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="gallery/allison-christine-n4MHxHD1dKI-unsplash.jpg" onclick = "FullView(this.src)" alt="">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery/allison-christine-RY9w18Eq-OM-unsplash.jpg" onclick = "FullView(this.src)" alt="">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery/allison-christine-SZ5jTdT6mVY-unsplash.jpg" onclick = "FullView(this.src)" alt="">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery/bryony-elena-tXwBDZS2JxQ-unsplash.jpg" onclick = "FullView(this.src)" alt="">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery/chelson-tamares-vtQHwU4F13s-unsplash.jpg" onclick = "FullView(this.src)" alt="">
+                    </div>
+                    <div class="gallery-card">
+                        <img src="gallery/christina-chauskin-yA7N0pbQWAs-unsplash.jpg" onclick = "FullView(this.src)" alt="">
+                    </div>
+                    <div class = "nails-border1"></div>
+                    <div class = "nails-border2"></div>
+                </div>
+                <div id = "FullImageView">
+                    <img id = "FullImage">
+                    <span id = "CloseButton1" onclick = "CloseFullView()">&times;</span>
+                    <span id = "CloseButton2" onclick = "CloseFullView()"></span>
+                </div>
+                <script type = "text/javascript">
+                    function FullView(ImgLink){
+                        document.getElementById("FullImage").src = ImgLink;
+                        document.getElementById("FullImageView").style.display = "block";
+                    }
+                    function CloseFullView(){
+                        document.getElementById("FullImageView").style.display = "none";
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+</body>

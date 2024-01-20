@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,p{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+/* nav */
+nav{
+    background-color:black;
+}
+.nav-container{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    width: 250px;
+}
+.nav-left img{
+    width: 100%;
+}
+.nav-center{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+.nav-center a{
+    color: #e1e1e1;
+    font-family: Noto Sans JP;
+    font-weight: 600;
+    font-size: 18px;
+}
+.nav-center a:hover{
+    margin-top: 13px;
+    border-bottom: solid 3px #B82681;
+    padding-bottom: 10px;
+}
+.nav-right{
+    width: 250px;
+    text-align: right;
+}
+.nav-right a{
+    color: #e1e1e1;
+    font-family: Noto Sans JP;
+    font-weight: 600;
+    font-size: 16px;
+    border: solid 3px #B82681;
+    padding: 8px 16px;
+    transition: 0.2s;
+}
+.nav-right a:hover{
+    background-color: #B82681;
+}
+
+
+
+.gallery{
+    background-color: #1e191c;
+    padding: 150px 0;
+}
+.gallery-container{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+}
+.gallery-container h1{
+    font-size: 50px;
+    font-family: Merriweather;
+    color: #e1e1e1;
+    margin-bottom: 100px;
+    border-left: solid 6px #B82681;
+    padding-left: 14px;
+}
+.gallery-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 18px;
+}
+.gallery-card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gallery-card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.gallery-card img:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.nails-border1{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 0;
+    left: 0;
+    border-left: solid 6px #B82681;
+    border-top:  solid 6px #B82681;
+}
+.nails-border2{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: 0;
+    right: 0;
+    border-right: solid 6px #B82681;
+    border-bottom:  solid 6px #B82681;
+}
+#FullImageView{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+#FullImage{
+    padding: 24px;
+    max-width: 98%;
+    max-height: 98%;
+}
+#CloseButton1{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+#CloseButton2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
