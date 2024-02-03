@@ -26,26 +26,97 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.nav-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48px;
+    height: 32px;
+}
+.nav-bar{
+    height: 5px;
+    width: 100%;
+    background-color: #936F37;
+    border-radius: 10px;
+}
+@media (max-width: 500px){
+    .nav-toggle{
+        display: flex;
+    }
+    .nav-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-center{
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    .responsive-toggle{
+        display: none;
+        flex-direction: column;
+        row-gap: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    .responsive-toggle a{
+        display: flex;
+
+    }
+    .nav-right a{
+        border: none;
+    }
+}
+
 .nav-left img{
-    width: 200px;
+    height: 135px;
 }
 .nav-center{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 32px;
 }
-.nav-center a{
+.nav-center a, .nav-center button{
     color: #1E1911;
     font-family: Noto Sans JP;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
 }
-.nav-center a:hover{
+.nav-center a:hover, .nav-center button:hover{
     margin-top: 13px;
     border-bottom: solid 3px #936F37;
     padding-bottom: 10px;
+    cursor: pointer;
 }
+.angebote-dropdown:hover .angebote-content{
+    display: block;
+}
+.angebote-content{
+    padding: 12px;
+    display: none;
+    background-color: #EDEBE4;
+    position: absolute;
+}
+.angebote-content a{
+    display: block;
+    color: #1E1911;
+    font-size: 20px;
+    padding: 12px 6px;
+}
+.angebote-content a:hover{
+    margin: 0;
+    padding: 12px 6px;
+    border: none;
+}
+.angebote-content a:hover .angebote-dropdown{
+    background-color: red;
+}
+
 .nav-right{
     text-align: right;
 }
@@ -62,6 +133,9 @@ nav{
     background-color: #936F37;
     color: #EDEBE4;
 }
+
+
+
 
 /* title */
 .title{
@@ -516,3 +590,5 @@ svg{
     font-family: Noto Sans JP;
     font-size: 16px;
 }
+
+
