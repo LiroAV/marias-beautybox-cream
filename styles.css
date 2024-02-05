@@ -14,6 +14,26 @@ a,p{
     text-decoration: none;
     color: black;
 }
+/* anchor values */
+:root{
+    --fs-title: clamp(3.5rem, 12vw + 1rem, 6rem);
+    --fs-subtitle: 50px;
+    --fs-text: 22px;
+}
+/* responsive typography */
+@media (max-width: 900px){
+    :root{
+        --fs-subtitle: 45px;
+        --fs-text: 20px;
+    }
+}
+@media (max-width: 600px){
+    :root{
+        --fs-subtitle: 40px;
+        --fs-text: 18px;
+    }
+}
+
 /* nav */
 .navbar{
     background-color: #EDEBE4;
@@ -117,6 +137,12 @@ a,p{
     }
 }
 
+/* Shrink logo if no space*/
+@media (max-width: 450px){
+    .brand-title a{
+        font-size: 30px;
+    }
+}
 
 /* title */
 .title{
@@ -136,12 +162,12 @@ a,p{
 }
 .title-container p{
     font-family: Playball;
-    font-size: 40px;
+    font-size: var(--fs-subtitle);
     color: #936F37;
 }
 .title-container h1{
     font-family: Merriweather;
-    font-size: 80px;
+    font-size: var(--fs-title);
     color: #1E1911;
 }
 .title-angebote{
@@ -161,6 +187,7 @@ a,p{
     border: solid 3px #936F37;
     padding: 9px 19px;
 }
+
 
 /* welcome */
 
@@ -186,7 +213,7 @@ a,p{
     margin-bottom: 25px;
 }
 .welcome-header h1{
-    font-size: 50px;
+    font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: #1E1911;
     border-left: solid 6px #936F37;
@@ -194,6 +221,7 @@ a,p{
 }
 .welcome-text p{
     color: 1E1911;
+    font-size: var(--fs-text);
     font-family: Noto Sans JP;
     width: 70%;
     margin: auto;
@@ -213,7 +241,7 @@ a,p{
     margin: auto;
 }
 .angebote h1{
-    font-size: 50px;
+    font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: #1E1911;
     margin-bottom: 100px;
@@ -272,7 +300,7 @@ a,p{
     padding: 150px 0;
 }
 .product h1{
-    font-size: 50px;
+    font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: #1E1911;
     margin-bottom: 100px;
@@ -312,7 +340,7 @@ a,p{
 .product-text p{
     color: 1E1911;
     font-family:Noto Sans JP;
-    font-size: 22px;
+    font-size: var(--fs-text);
 }
 .product-image img{
     height: 400px;
@@ -359,7 +387,7 @@ a,p{
     margin-bottom: 100px;
 }
 .team-header h1{
-    font-size: 50px;
+    font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: #1E1911;
     border-left: solid 6px #936F37;
@@ -425,7 +453,7 @@ a,p{
     margin-bottom: 100px;
 }
 .info-header h1{
-    font-size: 50px;
+    font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: #1E1911;
     border-left: solid 6px #936F37;
@@ -483,13 +511,13 @@ a,p{
 }
 .open-grid h3{
     color: #1E1911;
-    font-size: 22px;
+    font-size: var(--fs-text);
     font-family: Noto Sans JP;
     font-weight: 400;
 }
 .open-grid p{
     color: 1E1911;
-    font-size: 22px;
+    font-size: var(--fs-text);
     font-family: Noto Sans JP;
     font-weight: 400;
 }
@@ -554,6 +582,7 @@ svg{
     width: 80%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 8px;
 }
 .besago p{
