@@ -3,138 +3,119 @@
 #E1D2C1
 #936F37
 */
+
 *{
     margin: 0;
     padding: 0;
 }
 a,p{
+    font-family: Noto Sans JP;
     font-size: 16px;
     text-decoration: none;
     color: black;
 }
 /* nav */
-nav{
-    background-color:#EDEBE4;
-    padding: 8px 0;
+.navbar{
+    background-color: #EDEBE4;
+    padding: 24px 0;
 }
-.nav-container{
-    width: 80%;
-    max-width: 1400px;
-    margin: auto;
+.navbar-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
 }
-.nav-toggle{
+.brand-title a{
+    font-family: Alex Brush;
+    font-size: 40px;
+    color: #3a352c;
+}
+.navbar-links ul{
+    display: flex;
+    column-gap: 24px;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    font-family: Noto Sans JP;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+}
+.navbar-links a:hover{
+    border-bottom: solid 3px #936F37;
+    color: #936F37;
+    padding-bottom: 6px;
+}
+
+
+.toggle-button{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 34px;
+    right: 20px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 48px;
-    height: 32px;
+    width: 30px;
+    height: 21px;
 }
-.nav-bar{
-    height: 5px;
+.toggle-button .bar{
+    height: 3px;
     width: 100%;
     background-color: #936F37;
-    border-radius: 10px;
-}
-@media (max-width: 500px){
-    .nav-toggle{
-        display: flex;
-    }
-    .nav-container{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav-center{
-        display: flex;
-        flex-direction: column;
-        row-gap: 12px;
-    }
-    .responsive-toggle{
-        display: none;
-        flex-direction: column;
-        row-gap: 12px;
-        text-align: center;
-        width: 100%;
-    }
-    .responsive-toggle a{
-        display: flex;
-
-    }
-    .nav-right a{
-        border: none;
-    }
+    border-radius: 100px;
 }
 
-.nav-left img{
-    height: 135px;
-}
-.nav-center{
+.angebote-link:hover .angebote-dropdown{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: 32px;
 }
-.nav-center a, .nav-center button{
-    color: #1E1911;
-    font-family: Noto Sans JP;
-    font-weight: 500;
-    font-size: 20px;
-    border: none;
-}
-.nav-center a:hover, .nav-center button:hover{
-    margin-top: 13px;
-    border-bottom: solid 3px #936F37;
-    padding-bottom: 10px;
-    cursor: pointer;
-}
-.angebote-dropdown:hover .angebote-content{
-    display: block;
-}
-.angebote-content{
-    padding: 12px;
+.angebote-dropdown{
+    margin: 9px 0px 0px -32px;
     display: none;
-    background-color: #EDEBE4;
+    flex-direction: column;
     position: absolute;
+    background-color: #EDEBE4;
+    padding: 16px 32px;
 }
-.angebote-content a{
-    display: block;
-    color: #1E1911;
-    font-size: 20px;
-    padding: 12px 6px;
+.angebote-dropdown a{
+    padding: 8px 0;
 }
-.angebote-content a:hover{
-    margin: 0;
-    padding: 12px 6px;
-    border: none;
-}
-.angebote-content a:hover .angebote-dropdown{
-    background-color: red;
+.angebote-dropdown a:hover{
+    padding-bottom: 5px;
 }
 
-.nav-right{
-    text-align: right;
+@media (max-width: 1000px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        margin: auto;
+    }
+    .navbar-container{
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    .navbar-links {
+        text-align: center;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .angebote-dropdown{
+        position: relative;
+        margin: 9px 0 0 0;
+        padding: 0;
+    }
 }
-.nav-right a{
-    color: #1E1911;
-    font-family: Noto Sans JP;
-    font-weight: 600;
-    font-size: 16px;
-    border: solid 3px #936F37;
-    padding: 8px 16px;
-    transition: 0.2s;
-}
-.nav-right a:hover{
-    background-color: #936F37;
-    color: #EDEBE4;
-}
-
-
 
 
 /* title */

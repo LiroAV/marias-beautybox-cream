@@ -6,41 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marias-Beautybox</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="home.js" defer></script>
+    
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Merriweather:wght@300;400;700;900&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
-<body>
+
+    <body>
     <main>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-left">
-                    <img src="img/new-logo.png" alt="">
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="brand-title">
+                    <a href="">Marias Beauty Box</a>
                 </div>
-                <div class="nav-center">
-                    <a href="index.html">Home</a>
-                    <div class="angebote-dropdown">
-                        <button>Angebote</button>
-                        <div class = "angebote-content">
-                            <a href="">Nägel</a>
-                            <a href="">Gesicht</a>
-                            <a href="">Massagen</a>
-                            <a href="">Enthaarung</a>
-                        </div>
-                    </div>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="">Über uns</a>
-                    <a href="contact.html">Kontakt</a>
-                </div>
-                <div class="nav-right">
-                    <a href="">jetzt Anrufen</a>
-                </div>
-                <a class = "nav-toggle" href="#">
-                    <span class = "nav-bar"></span>
-                    <span class = "nav-bar"></span>
-                    <span class = "nav-bar"></span>
+                <a href="#" class = "toggle-button">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
                 </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class = "angebote-link"><a href="#">Angebote</a>
+                            <div class = "angebote-dropdown">
+                                <a href="">Nägel</a>
+                                <a href="">Gesicht</a>
+                                <a href="">Massage</a>
+                                <a href="">Enthaarung</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Über Uns</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Anrufen</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+        </div>
         <div class="title">
             <div class="title-container">
                 <p>Nails & Cosmetic</p>
