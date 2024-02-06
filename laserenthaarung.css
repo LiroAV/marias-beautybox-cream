@@ -12,6 +12,7 @@ a,p{
     /* font variables */
     --fs-title: clamp(3.5rem, 12vw + 1rem, 6rem);
     --fs-subtitle: 50px;
+    --fs-smalltitle: 26px;
     --fs-text: 22px;
 
     /* color variables */
@@ -201,19 +202,31 @@ a,p{
     border: solid 3px var(--clr-tertiary);
     padding: 9px 19px;
 }
+
+.frage{
+    background-color: var(--clr-primary);
+}
 .frage-container{
     width: 70%;
     max-width: 1400px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
 }
 .frage-closed{
     display: flex;
     column-gap: 16px;
     align-items: center;
 }
+.frage-closed h3{
+    font-size: var(--fs-smalltitle);
+    font-family: Merriweather;
+}
 .frage-antwort p{
     visibility: hidden;
     position: absolute;
+    font-size: var(--fs-text);
 }
 .frage-closed button{
     color: var(--clr-tertiary);
@@ -239,6 +252,11 @@ a,p{
     display: block;
 }
 .antwort4.active{
+    visibility: visible;
+    position: relative;
+    display: block;
+}
+.antwort5.active{
     visibility: visible;
     position: relative;
     display: block;

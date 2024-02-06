@@ -25,3 +25,10 @@ const answer4 = document.getElementsByClassName('antwort4')[0]
 revealAnswer4.addEventListener('click', () => {
     answer4.classList.toggle('active')
   })
+
+const revealAnswer5 = document.getElementsByClassName('reveal5')[0]
+const answer5 = document.getElementsByClassName('antwort5')[0]
+
+revealAnswer5.addEventListener('click', () => {
+    answer5.classList.toggle('active')
+  })
