@@ -11,7 +11,7 @@ a,p{
 /* anchor variables */
 :root{
     /* font variables */
-    --fs-title: clamp(3.5rem, 12vw + 1rem, 6rem);
+    --fs-title: clamp(2.5rem, 12vw + 0.25rem, 6.5rem);
     --fs-subtitle: 50px;
     --fs-text: 22px;
 
@@ -31,34 +31,19 @@ a,p{
         --fs-text: 20px;
     }
 }
+
 @media (max-width: 500px){
     :root{
         --fs-subtitle: 40px;
         --fs-text: 18px;
     }
-    .navbar-container{
-        width: 100%;
-    }
-    .title-container{
-        width: 100%;
-    }
-    .welcome-container{
-        width: 100%;
-    }
-    .angebote-container{
-        width: 100%;
-    }
-    .product-container{
-        width: 100%;
-    }
-    .team-container{
-        width: 100%;
-    }
-    .info-container{
-        width: 100%;
+}
+@media (max-width: 400px){
+    :root{
+        --fs-subtitle: 35px;
+        --fs-text: 16px;
     }
 }
-
 
 /* nav */
 .navbar{
@@ -180,6 +165,7 @@ a,p{
     background-position: center;
     width: 100%;
 }
+
 .title-container{
     width: 85%;
     max-width: 1400px;
@@ -323,6 +309,11 @@ a,p{
     position: relative;
     background-color: var(--clr-secondary);
     padding: 150px 0;
+}
+.product-header{
+    max-width: 1400px;
+    width: 85%;
+    margin: auto;
 }
 .product h1{
     font-size: var(--fs-subtitle);
@@ -626,4 +617,37 @@ svg{
     font-size: 16px;
 }
 
-
+@media (max-width: 750px){
+    .title{
+        background-image: url(img/responsive-bg.jpg);
+    }
+    .title-container{
+        text-align: center;
+    }
+}
+@media (max-width: 450px){
+    .navbar-container{
+        width: 95%;
+    }
+    .welcome-container{
+        width: 95%;
+    }
+    .title-container{
+        width: 100%;
+    }
+    .angebote-container{
+        width: 100%;
+    }
+    .product-container{
+        width: 100%;
+    }
+    .team-container{
+        width: 100%;
+    }
+    .info-container{
+        width: 100%;
+    }
+    .team-grid img{
+        padding: 0;
+    }
+}

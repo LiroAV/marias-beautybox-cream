@@ -144,6 +144,26 @@ a,p{
     color: var(--clr-tertiary);
 }
 
+.angebote-nav{
+    padding: 32px;
+}
+.angebote-nav-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.angebote-nav-container a{
+    font-size: 21px;
+}
+.angebote-nav-container a:hover{
+    color: #936F37;
+}
+.angebote-nav-active{
+    border-bottom: solid 3px #936F37;
+    margin-bottom: -2px;
+    color: #936F37;
+}
+
 
 
 .gallery{

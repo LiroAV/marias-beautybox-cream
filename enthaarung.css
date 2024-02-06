@@ -124,7 +124,11 @@ a,p{
 .angebote-nav-container a:hover{
     color: #936F37;
 }
-
+.angebote-nav-active{
+    border-bottom: solid 3px #936F37;
+    margin-bottom: -2px;
+    color: #936F37;
+}
 
 .price{
     background-color: #E1D2C1;
