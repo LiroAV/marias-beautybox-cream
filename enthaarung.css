@@ -8,6 +8,21 @@ a,p{
     text-decoration: none;
     color: black;
 }
+:root{
+    /* font variables */
+    --fs-title: clamp(3.5rem, 12vw + 1rem, 6rem);
+    --fs-subtitle: 50px;
+    --fs-text: 22px;
+
+    /* color variables */
+    --clr-primary: #EDEBE4;
+    --clr-secondary: #E1D2C1;
+    --clr-tertiary: #936F37;
+
+    /* font color variable */
+    --fc-title:#1e1111;
+    --fc-paragraph:#25211a;
+}
 /* nav */
 .navbar{
     background-color: #EDEBE4;
@@ -111,22 +126,30 @@ a,p{
     }
 }
 .angebote-nav{
-    padding: 32px;
+    padding: 24px 0 0 0;
+    background-color: var(--clr-secondary);
 }
 .angebote-nav-container{
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 24px;
+    width: 70%;
+    margin: auto;
+    border-bottom: solid 1px gray;
 }
+
 .angebote-nav-container a{
-    font-size: 21px;
-}
-.angebote-nav-container a:hover{
-    color: #936F37;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 16px 0;
+    transition: 0.1s;
 }
 .angebote-nav-active{
     border-bottom: solid 3px #936F37;
     margin-bottom: -2px;
+    color: #936F37;
+}
+.angebote-nav-container a:hover{
     color: #936F37;
 }
 

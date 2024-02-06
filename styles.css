@@ -111,6 +111,7 @@ a,p{
     position: absolute;
     background-color: var(--clr-primary);
     padding: 16px 32px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .angebote-dropdown a{
     padding: 8px 0;

@@ -129,34 +129,37 @@ a,p{
     }
 }
 .angebote-nav{
-    padding: 16px 0;
+    padding: 24px 0 0 0;
     background-color: var(--clr-secondary);
 }
 .angebote-nav-container{
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 24px;
     width: 70%;
     margin: auto;
     border-bottom: solid 1px gray;
+}
 
-}
 .angebote-nav-container a{
-    font-size: 21px;
-    padding: 8px 0;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 16px 0;
     transition: 0.1s;
-}
-.angebote-nav-container a:hover{
-    color: #936F37;
 }
 .angebote-nav-active{
     border-bottom: solid 3px #936F37;
     margin-bottom: -2px;
     color: #936F37;
 }
+.angebote-nav-container a:hover{
+    color: #936F37;
+}
+
 
 .description{
     background-color: var(--clr-secondary);
+    padding: 50px 0;
 }
 .description-container{
     display: grid;
@@ -166,17 +169,43 @@ a,p{
     margin: auto;
     align-items: center;
 }
+.description-left{
+    padding: 0 24px 0 0;
+}
 .description-left h1{
     font-size: var(--fs-subtitle);
+    color: var(--fc-title);
+    margin-bottom: 24px;
 }
 .description-left p{
+    line-height: 36px;
     font-size: var(--fs-text);
 }
 .description-right img{
     width: 100%;
+    height: 500px;
     object-fit: cover;
+    object-position: center 20%;
+    -webkit-box-shadow: 15px 15px 0px 4px var(--clr-tertiary); 
+    box-shadow: 15px 15px 0px 4px var(--clr-tertiary);
 }
-
+.description-gallery{
+    margin-top: 24px;
+}
+.description-gallery a{
+    background-color: var(--clr-tertiary);
+    font-family: Noto Sans JP;
+    color: #1E1911;
+    font-size: 18px;
+    padding: 12px 22px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+.description-gallery a:hover{
+    background-color:transparent;
+    border: solid 3px var(--clr-tertiary);
+    padding: 9px 19px;
+}
 
 .price{
     background-color: var(--clr-primary);
@@ -191,7 +220,9 @@ a,p{
     row-gap: 24px;
 }
 .price-container h1{
+    margin-bottom: 24px;
     font-size: var(--fs-subtitle);
+    color: var(--fc-title);
 }
 .price-card{
     display: flex;
@@ -206,4 +237,21 @@ a,p{
 .price-card p{
     font-family: Noto Sans JP;
     font-size: 24px;
+}
+.price-termin{
+    margin-top: 24px;
+}
+.price-termin a{
+    background-color: var(--clr-tertiary);
+    font-family: Noto Sans JP;
+    color: #1E1911;
+    font-size: 18px;
+    padding: 12px 22px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+.price-termin a:hover{
+    background-color:transparent;
+    border: solid 3px var(--clr-tertiary);
+    padding: 9px 19px;
 }
