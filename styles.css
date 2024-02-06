@@ -31,7 +31,6 @@ a,p{
         --fs-text: 20px;
     }
 }
-
 @media (max-width: 500px){
     :root{
         --fs-subtitle: 40px;
@@ -205,7 +204,7 @@ a,p{
 /* welcome */
 
 .welcome{
-    padding: 150px 0;
+    padding: 120px 0;
     background-color: var(--clr-secondary);
 }
 .welcome-container{
@@ -223,7 +222,7 @@ a,p{
 .welcome-header{
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 .welcome-header h1{
     font-size: var(--fs-subtitle);
@@ -245,18 +244,17 @@ a,p{
 .angebote{
     position: relative;
     background-color: var(--clr-primary);
-    padding: 150px 0;
+    padding: 120px 0;
 }
 .angebote-header{
     max-width: 1400px;
     width: 85%;
-    margin: auto;
+    margin: 0 auto 40px auto;
 }
 .angebote h1{
     font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: var(--fc-title);
-    margin-bottom: 100px;
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
@@ -309,18 +307,17 @@ a,p{
 .product{
     position: relative;
     background-color: var(--clr-secondary);
-    padding: 150px 0;
+    padding: 120px 0;
 }
 .product-header{
     max-width: 1400px;
     width: 85%;
-    margin: auto;
+    margin: 0 auto 40px auto;
 }
 .product h1{
     font-size: var(--fs-subtitle);
     font-family: Merriweather;
     color: var(--fc-title);
-    margin-bottom: 100px;
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
@@ -331,7 +328,7 @@ a,p{
 }
 .product-slide{
     background-color: var(--clr-primary);
-    padding: 30px 60px;
+    padding: 24px 48px;
 }
 .product-grid{
     display: grid;
@@ -365,9 +362,10 @@ a,p{
     object-fit: contain;
 }
 .product-button{
+    margin-top: 24px;
     display: flex;
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 12px;
 }
 .product-button button {
     background-color: transparent;
@@ -383,14 +381,14 @@ a,p{
 }
 
 .product-button button:active {
-    background-color: var(--clr-tertiary)7;
+    background-color: var(--clr-tertiary);
     color: var(--clr-primary);
 }
 /* team */
 
 .team{
     position: relative;
-    padding: 150px 0;
+    padding: 120px 0;
     background-color: var(--clr-primary);
 }
 .team-container{
@@ -401,7 +399,7 @@ a,p{
 .team-header{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .team-header h1{
     font-size: var(--fs-subtitle);
@@ -461,13 +459,13 @@ a,p{
 /* info */
 
 .info{
-    padding: 150px 0;
+    padding: 120px 0;
     background-color:var(--clr-secondary);
 }
 .info-header{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .info-header h1{
     font-size: var(--fs-subtitle);
@@ -650,5 +648,29 @@ svg{
     }
     .team-grid img{
         padding: 0;
+    }
+}
+/* responsive padding */
+@media (max-width: 550px){
+    .product-slide{
+        padding: 16px;
+    }
+    .welcome{
+        padding: 80px 0;
+    }
+    .title{
+        padding: 80px 0;
+    }
+    .angebote{
+        padding: 80px 0;
+    }
+    .product{
+        padding: 80px 0;
+    }
+    .team{
+        padding: 80px 0;
+    }
+    .info{
+        padding: 80px 0;
     }
 }
