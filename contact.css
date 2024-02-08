@@ -11,20 +11,28 @@ a,p{
 
 /* anchor variables */
 
+/* anchor variables */
 :root{
-    /* font variables */
-    --fs-title: clamp(3.5rem, 12vw + 1rem, 6rem);
-    --fs-subtitle: 50px;
-    --fs-text: 22px;
+    /* font size */
+    --fs-h1: 80.11px;
+    --fs-h2: 64.09px;
+    --fs-h3: 51.27px;
+    --fs-h4: 41.02px;
+    --fs-h5: 32.81px;
+    --fs-h6: 26.25px;
+    --fs-p: 21px;
+    --fs-small: 16.8px;
 
-    /* color variables */
+    /* color */
     --clr-primary: #EDEBE4;
     --clr-secondary: #E1D2C1;
     --clr-tertiary: #936F37;
 
-    /* font color variable */
-    --fc-title:#1e1111;
-    --fc-paragraph:#25211a;
+    /* font color */
+    --fc-100: #2c261b;
+    --fc-90: #413b33;
+    --fc-75: #605c54;
+    --fc-50: #95928d;
 }
 
 /* nav */

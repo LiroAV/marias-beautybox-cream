@@ -10,37 +10,74 @@ a,p{
 }
 /* anchor variables */
 :root{
-    /* font variables */
-    --fs-title: clamp(2.5rem, 12vw + 0.25rem, 6.5rem);
-    --fs-subtitle: 50px;
-    --fs-text: 22px;
+    /* font size */
+    --fs-h1: 80.11px;
+    --fs-h2: 64.09px;
+    --fs-h3: 51.27px;
+    --fs-h4: 41.02px;
+    --fs-h5: 32.81px;
+    --fs-h6: 26.25px;
+    --fs-p: 21px;
+    --fs-small: 16.8px;
 
-    /* color variables */
+    /* color */
     --clr-primary: #EDEBE4;
     --clr-secondary: #E1D2C1;
     --clr-tertiary: #936F37;
 
-    /* font color variable */
-    --fc-title:#1e1111;
-    --fc-paragraph:#25211a;
+    /* font color */
+    --fc-100: #2c261b;
+    --fc-90: #413b33;
+    --fc-75: #605c54;
+    --fc-50: #95928d;
 }
 /* responsive typography */
-@media (max-width: 900px){
+@media (max-width: 1000px){
     :root{
-        --fs-subtitle: 45px;
-        --fs-text: 20px;
+        --fs-h1: 76.1px;
+        --fs-h2: 60.9px;
+        --fs-h3: 48.7px;
+        --fs-h4: 39.0px;
+        --fs-h5: 31.2px;
+        --fs-h6: 24.9px;
+        --fs-p: 19.9px;
+        --fs-small: 16.0px;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 750px){
     :root{
-        --fs-subtitle: 40px;
-        --fs-text: 18px;
+        --fs-h1: 72.2px;
+        --fs-h2: 57.9px;
+        --fs-h3: 46.3px;
+        --fs-h4: 37.1px;
+        --fs-h5: 29.6px;
+        --fs-h6: 23.7px;
+        --fs-p: 18.9px;
+        --fs-small: 15.2px;        
     }
 }
-@media (max-width: 400px){
+@media (max-width: 562.5px){
     :root{
-        --fs-subtitle: 35px;
-        --fs-text: 16px;
+        --fs-h1: 68.7px;
+        --fs-h2: 55.0px;
+        --fs-h3: 44.0px;
+        --fs-h4: 35.2px;
+        --fs-h5: 28.1px;
+        --fs-h6: 22.5px;
+        --fs-p: 18.0px;
+        --fs-small: 14.4px;        
+    }
+}
+@media (max-width: 421.875px){
+    :root{
+        --fs-h1: 65.3px;
+        --fs-h2: 52.3px;
+        --fs-h3: 41.8px;
+        --fs-h4: 33.4px;
+        --fs-h5: 26.7px;
+        --fs-h6: 21.4px;
+        --fs-p: 17.1px;
+        --fs-small: 13.7px;        
     }
 }
 
@@ -59,7 +96,7 @@ a,p{
 }
 .brand-title a{
     font-family: Alex Brush;
-    font-size: 40px;
+    font-size: var(--fs-h4);
     color: #3a352c;
 }
 .navbar-links ul{
@@ -71,7 +108,7 @@ a,p{
 }
 .navbar-links li a{
     font-family: Noto Sans JP;
-    font-size: 20px;
+    font-size: var(--fs-p);
     font-weight: 400;
     border: none;
     background-color: transparent;
@@ -151,7 +188,7 @@ a,p{
 /* Shrink logo if no space*/
 @media (max-width: 450px){
     .brand-title a{
-        font-size: 30px;
+        font-size: var(--fs-h5);
     }
 }
 
@@ -174,13 +211,13 @@ a,p{
 }
 .title-container p{
     font-family: Playball;
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-h3);
     color: var(--clr-tertiary);
 }
 .title-container h1{
     font-family: Merriweather;
-    font-size: var(--fs-title);
-    color: var(--fc-title);
+    font-size: var(--fs-h1);
+    color: var(--fc-100);
 }
 .title-angebote{
     margin-top: 50px;
@@ -189,7 +226,7 @@ a,p{
     background-color: var(--clr-tertiary);
     font-family: Noto Sans JP;
     color: #1E1911;
-    font-size: 18px;
+    font-size: var(--fs-small);
     padding: 12px 22px;
     transition: background-color 0.2s;
     font-weight: 500;
@@ -225,15 +262,15 @@ a,p{
     margin-bottom: 40px;
 }
 .welcome-header h1{
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-h3);
     font-family: Merriweather;
-    color: var(--fc-title);
+    color: var(--fc-100);
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
 .welcome-text p{
-    color: var(--fc-paragraph);
-    font-size: var(--fs-text);
+    color: var(--fc-90);
+    font-size: var(--fs-p);
     font-family: Noto Sans JP;
     margin: auto;
     text-align: center;
@@ -252,9 +289,9 @@ a,p{
     margin: 0 auto 40px auto;
 }
 .angebote h1{
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-h3);
     font-family: Merriweather;
-    color: var(--fc-title);
+    color: var(--fc-100);
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
@@ -285,7 +322,7 @@ a,p{
     bottom: 10%;
     position: absolute;
     font-family: Playball;
-    font-size: 70px;
+    font-size: var(--fs-h2);
     color: #ffffff;
 }
 .angebote-link:hover .angebote-image{
@@ -315,9 +352,9 @@ a,p{
     margin: 0 auto 40px auto;
 }
 .product h1{
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-h3);
     font-family: Merriweather;
-    color: var(--fc-title);
+    color: var(--fc-100);
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
@@ -347,14 +384,14 @@ a,p{
 .product-text h2{
     color: #1E1911;
     font-family: Merriweather;
-    font-size: 26px;
+    font-size: var(--fs-h5);
     border-left: solid 3px var(--clr-tertiary);
     padding-left: 10px;
 }
 .product-text p{
-    color: var(--fc-paragraph);
+    color: var(--fc-90);
     font-family:Noto Sans JP;
-    font-size: var(--fs-text);
+    font-size: var(--fs-p);
 }
 .product-image img{
     height: 400px;
@@ -402,9 +439,9 @@ a,p{
     margin-bottom: 40px;
 }
 .team-header h1{
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-h3);
     font-family: Merriweather;
-    color: var(--fc-title);
+    color: var(--fc-100);
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
@@ -437,14 +474,14 @@ a,p{
 }
 .team-text h2{
     font-family: Merriweather;
-    font-size: 20px;
+    font-size: var(--fs-p);
     font-weight: 600;
     color: #1E1911;
 }
 .team-text p{
     font-family: Noto Sans JP;
-    font-size: 16px;
-    color: var(--fc-paragraph);
+    font-size: var(--fs-small);
+    color: var(--fc-90);
 }
 .pink-deco1{
     position: absolute;
@@ -468,9 +505,9 @@ a,p{
     margin-bottom: 40px;
 }
 .info-header h1{
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-h3);
     font-family: Merriweather;
-    color: var(--fc-title);
+    color: var(--fc-100);
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
 }
@@ -497,9 +534,9 @@ a,p{
     text-align: center;
 }
 .open h1{
-    font-size: 40px;
+    font-size: var(--fs-h2);
     font-family: Merriweather;
-    color: var(--fc-title);
+    color: var(--fc-100);
     padding: 0 15px ;
     text-align: center;
     background-color: #0f0f0f;
@@ -515,7 +552,7 @@ a,p{
     justify-content: center;
 }
 .open-grid h2{
-    font-size: 35px;
+    font-size: var(--fs-h5);
     color: #1E1911;
     margin-bottom: 10px;
     padding-left: 10px;
@@ -526,13 +563,13 @@ a,p{
 }
 .open-grid h3{
     color: #1E1911;
-    font-size: var(--fs-text);
+    font-size: var(--fs-p);
     font-family: Noto Sans JP;
     font-weight: 400;
 }
 .open-grid p{
-    color: var(--fc-paragraph);
-    font-size: var(--fs-text);
+    color: var(--fc-100);
+    font-size: var(--fs-p);
     font-family: Noto Sans JP;
     font-weight: 400;
 }
@@ -572,18 +609,18 @@ footer{
     column-gap: 16px;
 }
 .footer-container h3{
-    font-size: 16px;
+    font-size: var(--fs-small);
     color: #8e8c88;
     font-family: Noto Sans JP;
 }
 .footer-container p{
-    font-size: 16px;
+    font-size: var(--fs-small);
     color: #8e8c88;
     font-family: Noto Sans JP;
 }
 .footer-container a{
     display: block;
-    font-size: 16px;
+    font-size: var(--fs-small);
     color: #8e8c88;
     font-family: Noto Sans JP;
 }
@@ -603,17 +640,17 @@ svg{
 .besago p{
     color: rgb(160, 160, 160);
     font-family: Noto Sans JP;
-    font-size: 16px;
+    font-size: var(--fs-small);
 }
 .copyright{
     color: rgb(160, 160, 160);
     font-family: Noto Sans JP;
-    font-size: 16px;
+    font-size: var(--fs-small);
 }
 .impressum{
     color: var(--clr-tertiary);
     font-family: Noto Sans JP;
-    font-size: 16px;
+    font-size: var(--fs-small);
 }
 
 @media (max-width: 750px){
