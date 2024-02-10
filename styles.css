@@ -258,13 +258,12 @@ a,p{
 /* animation */
 .hidden{
     opacity: 0;
-    filter: blur(3px);
-    transition: all 0.75s;
+    transition: all 0.8s;
+    scale: 0.95;
 }
 .show{
     opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
+    scale: 1;
 }
 
 

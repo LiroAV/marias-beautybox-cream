@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,p{
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+/* anchor variables */
+:root{
+    /* font size */
+    --fs-h1: 62.71px;
+    --fs-h2: 52.25px;
+    --fs-h3: 43.55px;
+    --fs-h4: 36.29px;
+    --fs-h5: 30.24px;
+    --fs-h6: 25.2px;
+    --fs-p: 21px;
+    --fs-small: 17.5px;
+
+    /* color */
+    --clr-primary: #EDEBE4;
+    --clr-secondary: #E1D2C1;
+    --clr-tertiary: #936F37;
+
+    /* font color */
+    --fc-100: #2c261b;
+    --fc-90: #413b33;
+    --fc-75: #605c54;
+    --fc-50: #95928d;
+    --fc-10: #eae9e8;
+    --fc-5: #f4f4f4;
+    --fc-3: #f9f8f8;
+}
+/* responsive typhography */
+
+
+
+/* nav */
+.navbar{
+    background-color: #EDEBE4;
+    padding: 24px 0;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+.brand-title a{
+    font-family: Alex Brush;
+    font-size: var(--fs-h4);
+    color: #3a352c;
+}
+.navbar-links ul{
+    display: flex;
+    column-gap: 24px;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    font-family: Noto Sans JP;
+    font-size: var(--fs-p);
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+}
+.navbar-links a:hover{
+    border-bottom: solid 3px #936F37;
+    color: #936F37;
+    padding-bottom: 6px;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #936F37;
+    border-radius: 100px;
+}
+
+.angebote-link:hover .angebote-dropdown{
+    display: flex;
+}
+.angebote-dropdown{
+    margin: 9px 0px 0px -32px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #EDEBE4;
+    padding: 16px 32px;
+}
+.angebote-dropdown a{
+    padding: 8px 0;
+}
+.angebote-dropdown a:hover{
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1000px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        margin: auto;
+    }
+    .navbar-container{
+        flex-direction: column;
+        align-items: start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    .navbar-links {
+        text-align: center;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .angebote-dropdown{
+        position: relative;
+        margin: 9px 0 0 0;
+        padding: 0;
+    }
+}
+.angebote-nav{
+    padding: 40px 0 0 0;
+    background-color: var(--clr-secondary);
+}
+.angebote-nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    width: 70%;
+    margin: auto;
+    border-bottom: solid 1px gray;
+}
+
+.angebote-nav-container a{
+    font-size: var(--fs-p);
+    font-weight: 300;
+    padding: 16px 0;
+    transition: 0.1s;
+}
+.angebote-nav-active{
+    border-bottom: solid 3px #936F37;
+    margin-bottom: -2px;
+    color: #936F37;
+}
+.angebote-nav-container a:hover{
+    color: #936F37;
+}
+
+
+.description{
+    background-color: var(--clr-secondary);
+    padding: 80px 0;
+}
+.description-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    row-gap: 40px;
+    column-gap: 40px;
+    width: 70%;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+}
+
+.description-left h1{
+    font-size: var(--fs-h3);
+    color: var(--fc-title);
+    margin-bottom: 24px;
+    border-left: solid 6px var(--clr-tertiary);
+    padding-left: 14px;
+}
+.description-left p{
+    line-height: 36px;
+    font-size: var(--fs-p);
+}
+
+.description-right img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center 20%;
+    -webkit-box-shadow: 15px 15px 0px 4px var(--clr-tertiary); 
+    box-shadow: 15px 15px 0px 4px var(--clr-tertiary);
+}
+.description-gallery{
+    margin-top: 40px;
+}
+.description-gallery a{
+    background-color: var(--clr-tertiary);
+    font-family: Noto Sans JP;
+    color: #1E1911;
+    font-size: var(--fs-small);
+    padding: 12px 22px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+.description-gallery a:hover{
+    background-color:transparent;
+    border: solid 3px var(--clr-tertiary);
+    padding: 9px 19px;
+}
+
+.frage{
+    background-color: var(--clr-secondary);
+    padding: 80px 0;
+}
+.frage-container{
+    width: 70%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+.frage-container h1{
+    font-size: var(--fs-h3);
+    margin-bottom: 40px;
+}
+.frage-container p{
+    font-size: var(--fs-p);
+    margin-bottom: 16px;
+}
+.frage-closed{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+.frage-closed h3{
+    font-size: var(--fs-h6);
+    font-family: Noto Sans JP;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.frage-antwort p{
+    visibility: hidden;
+    position: absolute;
+    font-size: var(--fs-p);
+}
+.frage-closed button{
+    color: var(--clr-tertiary);
+    background-color: transparent;
+    border: none;
+    font-size: var(--fs-h5);
+    font-weight: 800;
+    cursor: pointer;
+}
+.antwort1.active{
+    visibility: visible;
+    position: relative;
+    display: block;
+}
+.antwort2.active{
+    visibility: visible;
+    position: relative;
+    display: block;
+}
+.antwort3.active{
+    visibility: visible;
+    position: relative;
+    display: block;
+}
+.antwort4.active{
+    visibility: visible;
+    position: relative;
+    display: block;
+}
+.antwort5.active{
+    visibility: visible;
+    position: relative;
+    display: block;
+}
+
+
+.price{
+    background-color: var(--clr-primary);
+    padding: 80px 0;
+}
+.price-container{
+    width:70%;
+    max-width: 1400px;
+    margin: auto;
+}
+.price-container h1{
+    margin-bottom: 24px;
+    font-size: var(--fs-h3);
+    color: var(--fc-100);
+    border-left: solid 6px var(--clr-tertiary);
+    padding-left: 14px;
+}
+.price-grid{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.price-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: solid 2px var(--clr-secondary);
+}
+
+.price-card h3{
+    font-size: var(--fs-p);
+    font-family: Noto Sans JP;
+    font-weight: 600;
+    text-align: start;
+}
+.price-card p{
+    text-align: end;
+    padding-right: 24px;
+    font-size: var(--fs-p);
+    font-family: Noto Sans JP;
+    font-weight: 400;
+}
+
+
+
+
+
+
+@media (max-width: 1400px){
+    .angebote-nav-container{
+        width: 85%;
+    }
+    .description-container{
+        width: 85%;
+    }
+    .navbar-container{
+        width: 85%;
+    }
+    .price-container{
+        width: 85%;
+    }
+    .description-right img{
+        box-shadow: none;
+        width: 100%;
+    }
+    .description-right{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+    :root{
+        --fs-h1: 56.4px;
+        --fs-h2: 47.0px;
+        --fs-h3: 39.2px;
+        --fs-h4: 32.7px;
+        --fs-h5: 27.2px;
+        --fs-h6: 22.7px;
+        --fs-p: 18.9px;
+        --fs-small: 15.8px;                     
+    }
+    .description-left p{
+        line-height: 32px;
+    }
+}
+@media (max-width: 700px){
+    :root{
+        --fs-h1: 50.8px;
+        --fs-h2: 42.3px;
+        --fs-h3: 35.3px;
+        --fs-h4: 29.4px;
+        --fs-h5: 24.5px;
+        --fs-h6: 20.4px;
+        --fs-p: 17.0px;
+        --fs-small: 14.2px;      
+    }
+    .description-right img{
+        width: 100%;
+    }
+    .description-left p{
+        line-height: 28px;
+    }
+    .angebote-nav-container a{
+        font-size: var(--fs-h6);
+    }
+}
+@media (max-width: 450px){
+    :root{
+        /* font size */
+        --fs-h1: 45.7px;
+        --fs-h2: 38.1px;
+        --fs-h3: 31.8px;
+        --fs-h4: 26.5px;
+        --fs-h5: 22.1px;
+        --fs-h6: 18.4px;
+        --fs-p: 15.3px;
+        --fs-small: 12.8px;        
+    }
+    .description-container{
+        width: 95%;
+    }
+    .navbar-container{
+        width: 95%;
+    }
+    .price-container{
+        width: 95%;
+    }
+    .angebote-nav-container{
+        width: 95%;
+    }
+    .description-container{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .description-left p{
+        line-height: 24px;
+    }
+}
