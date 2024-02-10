@@ -10,18 +10,17 @@ a,p{
 }
 
 /* anchor variables */
-
-/* anchor variables */
 :root{
     /* font size */
-    --fs-h1: 80.11px;
-    --fs-h2: 64.09px;
-    --fs-h3: 51.27px;
-    --fs-h4: 41.02px;
-    --fs-h5: 32.81px;
-    --fs-h6: 26.25px;
+    --fs-title: 80px;
+    --fs-h1: 62.71px;
+    --fs-h2: 52.25px;
+    --fs-h3: 43.55px;
+    --fs-h4: 36.29px;
+    --fs-h5: 30.24px;
+    --fs-h6: 25.2px;
     --fs-p: 21px;
-    --fs-small: 16.8px;
+    --fs-small: 17.5px;
 
     /* color */
     --clr-primary: #EDEBE4;
@@ -33,6 +32,58 @@ a,p{
     --fc-90: #413b33;
     --fc-75: #605c54;
     --fc-50: #95928d;
+    --fc-10: #eae9e8;
+    --fc-5: #f4f4f4;
+    --fc-3: #f9f8f8;
+}
+/* responsive typography */
+@media (max-width: 1000px){
+    :root{
+        --fs-h1: 76.1px;
+        --fs-h2: 60.9px;
+        --fs-h3: 48.7px;
+        --fs-h4: 39.0px;
+        --fs-h5: 31.2px;
+        --fs-h6: 24.9px;
+        --fs-p: 19.9px;
+        --fs-small: 16.0px;
+    }
+}
+@media (max-width: 750px){
+    :root{
+        --fs-h1: 72.2px;
+        --fs-h2: 57.9px;
+        --fs-h3: 46.3px;
+        --fs-h4: 37.1px;
+        --fs-h5: 29.6px;
+        --fs-h6: 23.7px;
+        --fs-p: 18.9px;
+        --fs-small: 15.2px;        
+    }
+}
+@media (max-width: 562.5px){
+    :root{
+        --fs-h1: 68.7px;
+        --fs-h2: 55.0px;
+        --fs-h3: 44.0px;
+        --fs-h4: 35.2px;
+        --fs-h5: 28.1px;
+        --fs-h6: 22.5px;
+        --fs-p: 18.0px;
+        --fs-small: 14.4px;        
+    }
+}
+@media (max-width: 421.875px){
+    :root{
+        --fs-h1: 65.3px;
+        --fs-h2: 52.3px;
+        --fs-h3: 41.8px;
+        --fs-h4: 33.4px;
+        --fs-h5: 26.7px;
+        --fs-h6: 21.4px;
+        --fs-p: 17.1px;
+        --fs-small: 13.7px;        
+    }
 }
 
 /* nav */
@@ -50,19 +101,20 @@ a,p{
 }
 .brand-title a{
     font-family: Alex Brush;
-    font-size: 40px;
-    color: #3a352c;
+    font-size: var(--fs-h4);
+    color: var(--fc-90);
 }
 .navbar-links ul{
     display: flex;
     column-gap: 24px;
+    align-items: center;
 }
 .navbar-links li{
     list-style: none;
 }
-.navbar-links li a{
+.navbar-links li a, .navbar p{
     font-family: Noto Sans JP;
-    font-size: 20px;
+    font-size: var(--fs-p);
     font-weight: 400;
     border: none;
     background-color: transparent;
