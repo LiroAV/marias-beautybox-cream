@@ -8,7 +8,9 @@ a,p{
     text-decoration: none;
     color: black;
 }
-
+h1{
+    font-family: Merriweather;
+}
 /* anchor variables */
 :root{
     /* font size */
