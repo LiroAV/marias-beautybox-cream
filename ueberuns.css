@@ -76,6 +76,17 @@ a,p{
     color: #936F37;
     padding-bottom: 6px;
 }
+.nav-icons{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+.nav-icon svg{
+    fill: var(--fc-75);
+    margin-top: 6px;
+    height: 23px;
+    width: 23px;
+}
 
 .toggle-button{
     position: absolute;
@@ -146,12 +157,12 @@ a,p{
     background-color: var(--clr-secondary);
 }
 .team-container{
-    width: 60%;
+    width: 70%;
     max-width: 1100px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 80px;
 }
 .team-header{
     margin: auto;
@@ -206,11 +217,6 @@ a,p{
 }
 
 
-@media (max-width: 1200px){
-    .team-container{
-        width: 70%;
-    }
-}
 @media (max-width: 1050px){
     .team-container{
         width: 80%;

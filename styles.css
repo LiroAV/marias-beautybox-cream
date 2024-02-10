@@ -11,14 +11,15 @@ a,p{
 /* anchor variables */
 :root{
     /* font size */
-    --fs-h1: 80.11px;
-    --fs-h2: 64.09px;
-    --fs-h3: 51.27px;
-    --fs-h4: 41.02px;
-    --fs-h5: 32.81px;
-    --fs-h6: 26.25px;
+    --fs-title: 80px;
+    --fs-h1: 62.71px;
+    --fs-h2: 52.25px;
+    --fs-h3: 43.55px;
+    --fs-h4: 36.29px;
+    --fs-h5: 30.24px;
+    --fs-h6: 25.2px;
     --fs-p: 21px;
-    --fs-small: 16.8px;
+    --fs-small: 17.5px;
 
     /* color */
     --clr-primary: #EDEBE4;
@@ -30,6 +31,9 @@ a,p{
     --fc-90: #413b33;
     --fc-75: #605c54;
     --fc-50: #95928d;
+    --fc-10: #eae9e8;
+    --fc-5: #f4f4f4;
+    --fc-3: #f9f8f8;
 }
 /* responsive typography */
 @media (max-width: 1000px){
@@ -97,7 +101,7 @@ a,p{
 .brand-title a{
     font-family: Alex Brush;
     font-size: var(--fs-h4);
-    color: #3a352c;
+    color: var(--fc-90);
 }
 .navbar-links ul{
     display: flex;
@@ -128,9 +132,10 @@ a,p{
 .nav-icon svg{
     fill: var(--fc-75);
     margin-top: 6px;
-    width: 23px;
     height: 23px;
+    width: 23px;
 }
+
 .nav-icon svg:hover{
     fill: var(--clr-tertiary);
 }
@@ -234,7 +239,7 @@ a,p{
 }
 .title-container h1{
     font-family: Merriweather;
-    font-size: var(--fs-h1);
+    font-size: var(--fs-title);
     color: var(--fc-100);
 }
 .title-angebote{
@@ -243,7 +248,7 @@ a,p{
 .title-container a{
     background-color: var(--clr-tertiary);
     font-family: Noto Sans JP;
-    color: #1E1911;
+    color: var(--fc-10);
     font-size: var(--fs-small);
     padding: 12px 22px;
     transition: background-color 0.2s;
@@ -257,7 +262,7 @@ a,p{
 
 /* animation */
 .hidden{
-    opacity: 0;
+    opacity: 0.3;
     transition: all 0.8s;
     scale: 0.95;
 }
@@ -352,8 +357,8 @@ a,p{
     bottom: 10%;
     position: absolute;
     font-family: Playball;
-    font-size: var(--fs-h2);
-    color: #ffffff;
+    font-size: var(--fs-h1);
+    color: var(--fc-10);
 }
 .angebote-link:hover .angebote-image{
     filter: brightness(95%);
@@ -412,7 +417,7 @@ a,p{
     row-gap: 20px;
 }
 .product-text h2{
-    color: #1E1911;
+    color: var(--fc-90);
     font-family: Merriweather;
     font-size: var(--fs-h5);
     border-left: solid 3px var(--clr-tertiary);
@@ -506,12 +511,12 @@ a,p{
     font-family: Merriweather;
     font-size: var(--fs-p);
     font-weight: 600;
-    color: #1E1911;
+    color: var(--fc-10);
 }
 .team-text p{
     font-family: Noto Sans JP;
     font-size: var(--fs-small);
-    color: var(--fc-90);
+    color: var(--fc-5);
 }
 .pink-deco1{
     position: absolute;
@@ -563,14 +568,6 @@ a,p{
     background-color: var(--clr-primary);
     text-align: center;
 }
-.open h1{
-    font-size: var(--fs-h2);
-    font-family: Merriweather;
-    color: var(--fc-100);
-    padding: 0 15px ;
-    text-align: center;
-    background-color: #0f0f0f;
-}
 .open-grid{
     display: flex;
     flex-direction: column;
@@ -583,7 +580,7 @@ a,p{
 }
 .open-grid h2{
     font-size: var(--fs-h5);
-    color: #1E1911;
+    color: var(--fc-100);
     margin-bottom: 10px;
     padding-left: 10px;
 }
@@ -592,13 +589,13 @@ a,p{
     border-bottom: var(--clr-tertiary) solid 1px;
 }
 .open-grid h3{
-    color: #1E1911;
+    color: var(--fc-100);
     font-size: var(--fs-p);
     font-family: Noto Sans JP;
-    font-weight: 400;
+    font-weight: 500;
 }
 .open-grid p{
-    color: var(--fc-100);
+    color: var(--fc-90);
     font-size: var(--fs-p);
     font-family: Noto Sans JP;
     font-weight: 400;
@@ -638,16 +635,8 @@ footer{
     display: flex;
     column-gap: 16px;
 }
-.footer-container h3{
-    font-size: var(--fs-small);
-    color: #8e8c88;
-    font-family: Noto Sans JP;
-}
-.footer-container p{
-    font-size: var(--fs-small);
-    color: #8e8c88;
-    font-family: Noto Sans JP;
-}
+
+
 .footer-container a{
     display: block;
     font-size: var(--fs-small);
