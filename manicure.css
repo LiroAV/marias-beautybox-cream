@@ -211,6 +211,7 @@ h1{
     justify-content: center;
     column-gap: 24px;
     width: 70%;
+    max-width: 1400px;
     margin: auto;
     border-bottom: solid 1px gray;
 }

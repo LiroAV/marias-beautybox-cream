@@ -213,6 +213,7 @@ h1{
     justify-content: center;
     column-gap: 24px;
     width: 70%;
+    max-width: 1400px;
     margin: auto;
     border-bottom: solid 1px gray;
 }
@@ -397,7 +398,23 @@ h1{
     font-family: Noto Sans JP;
     font-weight: 400;
 }
-
+.price-termin{
+    margin-top: 40px;
+}
+.price-termin a{
+    background-color: var(--clr-tertiary);
+    font-family: Noto Sans JP;
+    color: #1E1911;
+    font-size: var(--fs-small);
+    padding: 12px 22px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+.price-termin a:hover{
+    background-color:transparent;
+    border: solid 3px var(--clr-tertiary);
+    padding: 9px 19px;
+}
 
 
 
@@ -411,6 +428,9 @@ h1{
         width: 85%;
     }
     .navbar-container{
+        width: 85%;
+    }
+    .frage-container{
         width: 85%;
     }
     .price-container{
@@ -479,6 +499,9 @@ h1{
     .navbar-container{
         width: 95%;
     }
+    .frage-container{
+        width: 95%;
+    }
     .price-container{
         width: 95%;
     }
@@ -490,5 +513,15 @@ h1{
     }
     .description-left p{
         line-height: 24px;
+    }
+}
+@media (max-width: 575px){
+    .price-container h3{
+        font-size: var(--fs-small);
+        font-weight: 400;
+    }
+    .price-container p{
+        font-size: var(--fs-small);
+        font-weight: 400;
     }
 }

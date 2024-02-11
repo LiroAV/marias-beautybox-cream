@@ -11,7 +11,7 @@ a,p{
 /* anchor variables */
 :root{
     /* font size */
-    --fs-title: 80px;
+    --fs-title: clamp(3rem, 8vw + 1rem, 6rem);
     --fs-h1: 62.71px;
     --fs-h2: 52.25px;
     --fs-h3: 43.55px;
@@ -234,7 +234,7 @@ a,p{
 }
 .title-container p{
     font-family: Playball;
-    font-size: var(--fs-h3);
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
     color: var(--clr-tertiary);
 }
 .title-container h1{
@@ -336,7 +336,7 @@ a,p{
 }
 .angebote-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
 }
 
 .angebote-card{
@@ -483,7 +483,8 @@ a,p{
 .team-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 50px;
+    column-gap: 52px;
+    row-gap: 52px;
 }
 .team-grid img{
     width: 100%;
@@ -537,7 +538,6 @@ a,p{
 .info-header{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
 }
 .info-header h1{
     font-size: var(--fs-h3);
@@ -545,6 +545,7 @@ a,p{
     color: var(--fc-100);
     border-left: solid 6px var(--clr-tertiary);
     padding-left: 14px;
+    margin-bottom: 40px;
 }
 .info-container{
     max-width: 1400px;
@@ -553,7 +554,7 @@ a,p{
 }
 .info-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
 }
 .info-map iframe{
@@ -582,7 +583,6 @@ a,p{
     font-size: var(--fs-h5);
     color: var(--fc-100);
     margin-bottom: 10px;
-    padding-left: 10px;
 }
 .open-time{
     padding-bottom: 10px;
@@ -682,10 +682,10 @@ svg{
 }
 @media (max-width: 450px){
     .navbar-container{
-        width: 95%;
+        width: 90%;
     }
     .welcome-container{
-        width: 95%;
+        width: 90%;
     }
     .title-container{
         width: 100%;
@@ -715,7 +715,7 @@ svg{
         padding: 80px 0;
     }
     .title{
-        padding: 80px 0;
+        padding: 250px 0;
     }
     .angebote{
         padding: 80px 0;
@@ -728,5 +728,16 @@ svg{
     }
     .info{
         padding: 80px 0;
+    }
+}
+@media (max-width: 570px){
+    .angebote-card{
+        height: 400px;
+    }
+}
+@media (max-width: 705px){
+    .open{
+        padding: 30px;
+        height: auto;
     }
 }

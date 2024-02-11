@@ -205,10 +205,10 @@ a,p{
 .angebote-nav-container{
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     column-gap: 24px;
     width: 70%;
+    max-width: 1400px;
     margin: auto;
     border-bottom: solid 1px gray;
 }
@@ -295,6 +295,11 @@ a,p{
     display: flex;
     align-items: center;
     column-gap: 48px;
+}
+@media (max-width:1200px){
+    .info-container{
+        flex-wrap: wrap;
+    }
 }
 .info-container h1{
     border-left: solid 6px var(--clr-tertiary);
@@ -448,6 +453,9 @@ a,p{
     .angebote-nav-container{
         width: 85%;
     }
+    .info-container{
+        width: 85%;
+    }
     .frage-container{
         width: 85%;
     }
@@ -507,6 +515,9 @@ a,p{
         --fs-h6: 18.4px;
         --fs-p: 15.3px;
         --fs-small: 12.8px;        
+    }
+    .info-container{
+        width: 95%;
     }
     .frage-container{
         width: 95%;
