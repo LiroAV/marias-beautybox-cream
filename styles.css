@@ -634,6 +634,7 @@ footer{
 .footer-card{
     display: flex;
     column-gap: 16px;
+    align-items: center;
 }
 
 

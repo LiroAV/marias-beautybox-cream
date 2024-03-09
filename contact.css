@@ -238,6 +238,7 @@ svg{
     grid-template-columns: 3fr 4fr;
     align-items: center;
 }
+
 .kontakt-left h1{
     font-size: 50px;
     font-family: Merriweather;
@@ -254,11 +255,13 @@ svg{
 .kontakt-card{
     display: flex;
     column-gap: 16px;
+    align-items: center;
 }
 .kontakt-left h3{
     font-family: Noto Sans JP;
     color: var(--fc-paragraph);
-    font-size: 20px;
+    font-size: var(--fs-h6);
+    font-weight: 400;
 }
 .kontakt-right{
     height: 100%;
@@ -300,6 +303,7 @@ svg{
 .social-card{
     display: flex;
     column-gap: 8px;
+    align-items: center;
 }
 .social-card a{
     color: var(--fc-paragraph);
@@ -332,10 +336,17 @@ svg{
     padding: 32px 48px;
     text-align: center;
 }
+.adress-right h2{
+    color: var(--fc-title);
+    font-family: Noto Sans JP;
+    font-size: var(--fs-h4);
+    font-weight: 500;
+}
 .adress-right h3{
     color: var(--fc-title);
     font-family: Noto Sans JP;
-    font-size: 22px;
+    font-size: var(--fs-h6);
+    font-weight: 400;
 }
 .adress-navigate{
     margin-top: 20px;
@@ -347,6 +358,7 @@ svg{
     padding: 4px 8px;
     transition: 0.3s;
     font-weight: 500;
+    font-size: var(--fs-h6s);
 }
 .adress-right a:hover{
     background-color: var(--clr-tertiary);;
@@ -406,25 +418,17 @@ footer{
 .footer-card{
     display: flex;
     column-gap: 16px;
+    align-items: center;
 }
-.footer-container h3{
-    font-size: 16px;
-    color: #dadada;
-    font-family: Noto Sans JP;
-}
-.footer-container p{
-    font-size: 16px;
-    color: #dadada;
-    font-family: Noto Sans JP;
-}
+
 .footer-container a{
     display: block;
     font-size: 16px;
-    color: #dadada;
+    color: var(--fc-50);
     font-family: Noto Sans JP;
 }
-svg{
-    fill: var(--fc-paragraph);
+footer svg{
+    fill: var(--fc-50);
     width: 20px;
     height: 20px;
 }
@@ -436,12 +440,12 @@ svg{
     column-gap: 8px;
 }
 .besago p{
-    color: rgb(160, 160, 160);
+    color: var(--fc-50);
     font-family: Noto Sans JP;
     font-size: 16px;
 }
 .copyright{
-    color: rgb(160, 160, 160);
+    color: var(--fc-50);
     font-family: Noto Sans JP;
     font-size: 16px;
 }
